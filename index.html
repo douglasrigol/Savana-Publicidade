@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAVANA — Agência de Publicidade | Estratégia, criatividade e resultados</title>
+  <meta name="description" content="Agência de Publicidade online e offline que atende indústria, varejo, serviços, farmacêutico, tecnologia e agro em 360º com foco em estratégia e inteligência de mercado.">
+  <meta property="og:title" content="SAVANA — Agência de Publicidade">
+  <meta property="og:description" content="Impacto com relevância. Estratégia, criatividade e resultados.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <noscript>
+    <style>
+      .preloader { display: none !important; }
+      .cursor, .cursor-dot { display: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__panel preloader__panel--left"></div>
+    <div class="preloader__panel preloader__panel--right"></div>
+    <div class="preloader__inner">
+      <svg class="preloader__mark" viewBox="0 0 40 40" aria-hidden="true">
+        <polygon class="mark-facet mark-facet--1" points="8,33 19,5 18,33" fill="#ede9fe"/>
+        <polygon class="mark-facet mark-facet--2" points="18,33 19,5 25,33" fill="#8b5cf6"/>
+        <polygon class="mark-facet mark-facet--3" points="25,33 19,5 32,33" fill="#4c3399"/>
+      </svg>
+      <div class="preloader__logo" aria-label="SAVANA">
+        <span>S</span><span>A</span><span>V</span><span>A</span><span>N</span><span>A</span>
+      </div>
+      <p class="preloader__tag">Impacto com relevância</p>
+    </div>
+    <div class="preloader__counter"><span id="preloader-count">0</span>%</div>
+  </div>
+
+  <!-- ============ CURSOR / PROGRESSO / GRAIN ============ -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="progress-bar" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#inicio" class="logo" data-hover aria-label="SAVANA — voltar ao início">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="8,33 19,5 18,33" fill="#ede9fe"/>
+          <polygon points="18,33 19,5 25,33" fill="#8b5cf6"/>
+          <polygon points="25,33 19,5 32,33" fill="#4c3399"/>
+        </svg>
+        <span class="logo__text">SAVANA</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#savana" class="nav__link" data-hover>A Savana</a>
+        <a href="#servicos" class="nav__link" data-hover>Serviços</a>
+        <a href="#portfolio" class="nav__link" data-hover>Portfólio</a>
+        <a href="#clientes" class="nav__link" data-hover>Clientes</a>
+        <a href="#contato" class="nav__link" data-hover>Contato</a>
+      </nav>
+
+      <div class="header__right">
+        <div class="header__socials">
+          <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.2A9.5 9.5 0 1 0 12 2.5z"/><path d="M8.8 8.4c-.3 1.9 1.5 4.6 3.2 5.7 1.3.9 3 1.6 3.9.9.4-.3.5-1 .2-1.4l-1.3-1c-.3-.2-.7-.2-1 0l-.6.5c-1-.5-2.1-1.6-2.5-2.6l.5-.5c.3-.3.3-.7.1-1l-.9-1.4c-.3-.4-1-.4-1.4 0-.1.2-.2.5-.2.8z"/></svg>
+          </a>
+          <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 21v-7h2.5l.5-3H14V9.2c0-.9.3-1.7 1.7-1.7H16.5V4.8S15.4 4.5 14.4 4.5c-2.2 0-3.6 1.3-3.6 3.8V11H8.5v3H10.8v7"/></svg>
+          </a>
+          <a href="https://br.linkedin.com/company/savanapublicidade" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9.5" width="3.4" height="11"/><circle cx="4.7" cy="5" r="1.8"/><path d="M10 20.5v-11h3.3v1.6c.6-1 1.8-1.8 3.3-1.8 2.6 0 4.4 1.8 4.4 5v6.2h-3.4v-5.7c0-1.6-.7-2.6-2-2.6s-2.2 1-2.2 2.6v5.7z"/></svg>
+          </a>
+        </div>
+        <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="btn btn--primary btn--sm header__cta" data-hover data-magnetic>
+          <span>Chamar WhatsApp</span>
+        </a>
+        <button class="burger" id="burger" data-hover aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MENU MOBILE ============ -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Menu mobile">
+      <a href="#savana" class="mobile-menu__link">A Savana</a>
+      <a href="#servicos" class="mobile-menu__link">Serviços</a>
+      <a href="#portfolio" class="mobile-menu__link">Portfólio</a>
+      <a href="#clientes" class="mobile-menu__link">Clientes</a>
+      <a href="#contato" class="mobile-menu__link">Contato</a>
+    </nav>
+    <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="btn btn--primary mobile-menu__cta">
+      <span>Chamar WhatsApp</span>
+    </a>
+    <div class="mobile-menu__socials">
+      <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+      <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://br.linkedin.com/company/savanapublicidade" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__stars" id="stars" aria-hidden="true"></canvas>
+      <img src="assets/eclipse.png" alt="" class="eclipse-img eclipse-img--hero" aria-hidden="true">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="8,33 19,5 18,33" fill="#ede9fe"/><polygon points="18,33 19,5 25,33" fill="#8b5cf6"/><polygon points="25,33 19,5 32,33" fill="#4c3399"/></svg>
+            Impacto com relevância
+          </p>
+          <h1 class="hero__title">
+            <span class="hero__line"><span data-split>Estratégia</span></span>
+            <span class="hero__line"><span class="hero__line--accent" data-split>criatividade</span></span>
+            <span class="hero__line"><span data-split>e resultados</span></span>
+          </h1>
+          <div class="hero__actions">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="btn btn--primary" data-hover data-magnetic>
+              <span>Chamar WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#savana" class="btn btn--ghost" data-hover data-magnetic>
+              <span>Conheça a agência</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual" id="hero-rhino">
+          <div class="hero__rhino-glow" aria-hidden="true"></div>
+          <svg class="hero__rhino" id="rhino-img" viewBox="0 0 820 560" fill="none" role="img" aria-label="Rinoceronte facetado, símbolo da SAVANA">
+            <defs>
+              <linearGradient id="rhinoBase" x1="400" y1="60" x2="430" y2="560" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#c4b5fd"/>
+                <stop offset="0.45" stop-color="#8b6cf0"/>
+                <stop offset="1" stop-color="#3e2c8f"/>
+              </linearGradient>
+              <linearGradient id="tailGrad" x1="720" y1="150" x2="760" y2="410" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#6d55d0"/>
+                <stop offset="1" stop-color="#34246e"/>
+              </linearGradient>
+              <radialGradient id="humpLight" cx="0.45" cy="0.12" r="0.7">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+              </radialGradient>
+              <clipPath id="rhinoClip">
+                <polygon points="70,282 62,240 58,132 120,206 138,168 178,196 230,130 252,84 282,128 392,84 520,116 648,92 722,162 730,258 700,420 712,470 640,470 646,380 600,330 560,340 572,452 516,452 520,336 430,330 372,332 386,446 330,446 332,330 300,326 312,466 252,466 250,330 218,322 170,308 98,292"/>
+              </clipPath>
+            </defs>
+
+            <!-- base: cauda + silhueta -->
+            <g class="rhino-base">
+              <polygon points="716,150 748,290 760,406 734,400 702,236" fill="url(#tailGrad)"/>
+              <polygon points="70,282 62,240 58,132 120,206 138,168 178,196 230,130 252,84 282,128 392,84 520,116 648,92 722,162 730,258 700,420 712,470 640,470 646,380 600,330 560,340 572,452 516,452 520,336 430,330 372,332 386,446 330,446 332,330 300,326 312,466 252,466 250,330 218,322 170,308 98,292" fill="url(#rhinoBase)"/>
+            </g>
+
+            <!-- luz do dorso (recortada) -->
+            <g class="rhino-under" clip-path="url(#rhinoClip)">
+              <rect x="0" y="0" width="820" height="560" fill="url(#humpLight)"/>
+            </g>
+
+            <!-- facetas animáveis: cada uma voa até seu lugar -->
+            <g class="rhino-facets">
+              <polygon class="rf" points="58,132 62,240 98,206" fill="#efe9fe" opacity="0.92"/>
+              <polygon class="rf" points="58,132 98,206 120,206" fill="#181040" opacity="0.32"/>
+              <polygon class="rf" points="120,206 138,168 146,206" fill="#e4dafc" opacity="0.9"/>
+              <polygon class="rf" points="138,168 178,196 146,206" fill="#181040" opacity="0.3"/>
+              <polygon class="rf" points="98,206 120,206 146,206 170,230" fill="#ffffff" opacity="0.18"/>
+              <polygon class="rf" points="146,206 178,196 170,230" fill="#ffffff" opacity="0.1"/>
+              <polygon class="rf" points="178,196 230,130 192,228 170,230" fill="#ffffff" opacity="0.2"/>
+              <polygon class="rf" points="230,130 252,84 258,118" fill="#ffffff" opacity="0.22"/>
+              <polygon class="rf" points="252,84 282,128 258,118" fill="#181040" opacity="0.38"/>
+              <polygon class="rf" points="62,240 98,206 120,206 124,238" fill="#cabcf9" opacity="0.55"/>
+              <polygon class="rf" points="62,240 124,238 210,260 170,308 98,292 70,282" fill="#181040" opacity="0.26"/>
+              <polygon class="rf" points="124,238 170,230 192,228 210,260" fill="#ffffff" opacity="0.08"/>
+              <polygon class="rf" points="250,210 300,190 280,280 218,322" fill="#181040" opacity="0.22"/>
+              <polygon class="rf" points="192,228 250,210 218,322 210,260" fill="#181040" opacity="0.12"/>
+              <polygon class="rf" points="282,128 392,84 390,160" fill="#ffffff" opacity="0.26"/>
+              <polygon class="rf" points="282,128 390,160 300,190" fill="#ffffff" opacity="0.12"/>
+              <polygon class="rf" points="392,84 520,116 470,210 390,160" fill="#ffffff" opacity="0.14"/>
+              <polygon class="rf" points="520,116 648,92 600,200 470,210" fill="#ffffff" opacity="0.19"/>
+              <polygon class="rf" points="648,92 722,162 660,260 600,200" fill="#181040" opacity="0.14"/>
+              <polygon class="rf" points="722,162 730,258 660,260" fill="#181040" opacity="0.3"/>
+              <polygon class="rf" points="600,200 660,260 520,280 470,210" fill="#9d86ef" opacity="0.28"/>
+              <polygon class="rf" points="280,280 430,290 430,330 250,330" fill="#181040" opacity="0.34"/>
+              <polygon class="rf" points="430,290 520,280 600,330 520,336 430,330" fill="#181040" opacity="0.3"/>
+              <polygon class="rf" points="300,190 390,160 470,210 330,250 280,280" fill="#8d74e6" opacity="0.18"/>
+              <polygon class="rf" points="600,330 730,258 700,420 646,380" fill="#181040" opacity="0.3"/>
+              <polygon class="rf" points="646,380 700,420 712,470 640,470" fill="#181040" opacity="0.42"/>
+              <polygon class="rf" points="520,336 516,452 572,452 560,340" fill="#181040" opacity="0.46"/>
+              <polygon class="rf" points="332,330 330,446 386,446 372,332" fill="#181040" opacity="0.46"/>
+              <polygon class="rf" points="250,330 252,466 312,466 300,326" fill="#181040" opacity="0.16"/>
+              <polygon class="rf" points="250,330 252,466 272,466 270,332" fill="#ffffff" opacity="0.1"/>
+            </g>
+
+            <!-- malha, olho e narina (recortados) -->
+            <g class="rhino-detail" clip-path="url(#rhinoClip)">
+              <g stroke="#ede9fe" stroke-opacity="0.1" stroke-width="1.4">
+                <path d="M58 132 L98 206 L62 240 M98 206 L120 206 M120 206 L146 206 L138 168 M146 206 L170 230 L98 206 M170 230 L178 196 M170 230 L192 228 L230 130 M192 228 L210 260 L124 238 L170 230 M62 240 L124 238 M210 260 L170 308 M210 260 L218 322 M230 130 L258 118 M258 118 L282 128 M192 228 L250 210 L230 130 M250 210 L282 128 M250 210 L300 190 M300 190 L282 128 M300 190 L390 160 L282 128 M390 160 L392 84 M390 160 L470 210 L392 84 M470 210 L520 116 M470 210 L600 200 L520 116 M600 200 L648 92 M600 200 L660 260 L722 162 M660 260 L730 258 M470 210 L330 250 L300 190 M330 250 L280 280 L300 190 M250 210 L280 280 L218 322 M330 250 L430 290 L280 280 M430 290 L470 210 M430 290 L520 280 L470 210 M520 280 L660 260 M520 280 L600 330 M520 280 L520 336 M430 290 L430 330 M280 280 L250 330 M660 260 L600 330 M660 260 L646 380"/>
+              </g>
+              <polygon points="186,222 198,219 200,229 189,232" fill="#160e35"/>
+              <circle cx="191" cy="223.5" r="1.8" fill="#d8cffb"/>
+              <polygon points="74,254 84,252 82,262" fill="#181040" opacity="0.5"/>
+            </g>
+
+            <!-- contorno -->
+            <polygon class="rhino-outline" points="70,282 62,240 58,132 120,206 138,168 178,196 230,130 252,84 282,128 392,84 520,116 648,92 722,162 730,258 700,420 712,470 640,470 646,380 600,330 560,340 572,452 516,452 520,336 430,330 372,332 386,446 330,446 332,330 300,326 312,466 252,466 250,330 218,322 170,308 98,292" stroke="#cdc2fa" stroke-opacity="0.18" stroke-width="1.5" fill="none"/>
+          </svg>
+          
+        </div>
+      </div>
+
+      <a href="#savana" class="hero__scroll" data-hover aria-label="Rolar para a próxima seção">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track" id="ticker-track">
+        <div class="ticker__group">
+          <span>Estratégia</span><i>✦</i><span>Criatividade</span><i>✦</i><span>Resultados</span><i>✦</i><span>Branding</span><i>✦</i><span>Atendimento 360º</span><i>✦</i><span>Inteligência de mercado</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ A SAVANA ============ -->
+    <section class="about section" id="savana">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="section-head__index">01</span>
+          <span class="section-head__label">A Savana</span>
+          <span class="section-head__line"></span>
+        </header>
+
+        <div class="about__layout">
+          <p class="about__lead" data-reveal="words">
+            Agência de Publicidade <em>online e offline</em> que atende os setores da indústria, varejo, serviços, farmacêutico, tecnologia e agro em <em>360º</em> com foco em <em>estratégia</em> e <em>inteligência de mercado</em>.
+          </p>
+
+          <div class="about__side" data-reveal="up">
+            <div class="about__badge" aria-hidden="true">
+              <svg class="about__badge-text" viewBox="0 0 120 120">
+                <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+                <text><textPath href="#circlePath">ATENDIMENTO 360º • ESTRATÉGIA • CRIATIVIDADE •&#160;</textPath></text>
+              </svg>
+              <svg class="about__badge-mark" viewBox="0 0 40 40"><polygon points="8,33 19,5 18,33" fill="#ede9fe"/><polygon points="18,33 19,5 25,33" fill="#8b5cf6"/><polygon points="25,33 19,5 32,33" fill="#4c3399"/></svg>
+            </div>
+            <ul class="about__chips">
+              <li>Indústria</li>
+              <li>Varejo</li>
+              <li>Serviços</li>
+              <li>Farmacêutico</li>
+              <li>Tecnologia</li>
+              <li>Agro</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="certified" data-reveal="up">
+          <div class="certified__info">
+            <span class="certified__badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+              Agência certificada
+            </span>
+            <h3 class="certified__title">Parceiros dos principais players do mercado</h3>
+            <p class="certified__text">Somos parceiros dos principais players de CRM, Criação, B.I e Tecnologia do mercado.</p>
+          </div>
+          <ul class="certified__grid">
+            <li class="partner-card" data-hover>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16.5 4.7a3.5 3.5 0 0 1 0 6.6M18.5 14.6c1.9.9 3 2.6 3 5.4"/></svg>
+              <strong>CRM</strong>
+              <span>Relacionamento e automação</span>
+            </li>
+            <li class="partner-card" data-hover>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 5 5 .7-3.7 3.5.9 5.1L12 14.9 7.8 17.3l.9-5.1L5 8.7 10 8z"/><path d="M4 21h16"/></svg>
+              <strong>Criação</strong>
+              <span>Design e produção criativa</span>
+            </li>
+            <li class="partner-card" data-hover>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M21 20H3"/></svg>
+              <strong>B.I.</strong>
+              <span>Dados e inteligência</span>
+            </li>
+            <li class="partner-card" data-hover>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4V2M15 4V2M9 22v-2M15 22v-2M4 9H2M4 15H2M22 9h-2M22 15h-2"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+              <strong>Tecnologia</strong>
+              <span>Plataformas e integração</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="services section" id="servicos">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="section-head__index">02</span>
+          <span class="section-head__label">Nossos serviços</span>
+          <span class="section-head__line"></span>
+        </header>
+
+        <h2 class="section-title" data-reveal="words">O que movemos <em>pela sua marca</em></h2>
+
+        <ul class="services__list" id="services-list">
+          <li class="service-row" data-reveal="up" data-preview="0">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">01</span>
+              <h3 class="service-row__name">Planejamento Estratégico</h3>
+              <span class="service-row__tag">Estratégia</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="1">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">02</span>
+              <h3 class="service-row__name">Planejamento de Campanhas</h3>
+              <span class="service-row__tag">Campanhas</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="2">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">03</span>
+              <h3 class="service-row__name">Planejamento de Branding</h3>
+              <span class="service-row__tag">Marca</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="3">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">04</span>
+              <h3 class="service-row__name">Impressos e Comunicação Visual</h3>
+              <span class="service-row__tag">Offline</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="4">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">05</span>
+              <h3 class="service-row__name">Mídias Sociais</h3>
+              <span class="service-row__tag">Digital</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="5">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">06</span>
+              <h3 class="service-row__name">Design de Embalagens</h3>
+              <span class="service-row__tag">Produto</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="6">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">07</span>
+              <h3 class="service-row__name">Planejamento de Eventos</h3>
+              <span class="service-row__tag">Experiências</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="7">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">08</span>
+              <h3 class="service-row__name">Planejamento de Mídia e Tráfego Pago</h3>
+              <span class="service-row__tag">Performance</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li class="service-row" data-reveal="up" data-preview="8">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" data-hover>
+              <span class="service-row__index">09</span>
+              <h3 class="service-row__name">Criação de Sites</h3>
+              <span class="service-row__tag">Web</span>
+              <span class="service-row__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="service-preview" id="service-preview" aria-hidden="true">
+          <div class="service-preview__inner">
+            <span class="service-preview__num">01</span>
+            <svg class="service-preview__art" viewBox="0 0 40 40"><polygon points="8,33 19,5 18,33" fill="#ede9fe"/><polygon points="18,33 19,5 25,33" fill="#8b5cf6"/><polygon points="25,33 19,5 32,33" fill="#4c3399"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFÓLIO ============ -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="section-head__index">03</span>
+          <span class="section-head__label">Portfólio</span>
+          <span class="section-head__line"></span>
+        </header>
+
+        <h2 class="section-title" data-reveal="words">Trabalhos que deixam <em>marca</em></h2>
+
+        <div class="portfolio__grid">
+          <article class="work-card work-card--lg" data-reveal="up" data-hover>
+            <div class="work-card__media">
+              <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <radialGradient id="w1" cx="0.3" cy="0.75" r="0.9"><stop offset="0" stop-color="#8b5cf6"/><stop offset="0.55" stop-color="#3b2a73"/><stop offset="1" stop-color="#100d1d"/></radialGradient>
+                </defs>
+                <rect width="600" height="440" fill="url(#w1)"/>
+                <circle cx="180" cy="330" r="130" fill="none" stroke="#c4b5fd" stroke-opacity="0.5" stroke-width="1.5"/>
+                <circle cx="180" cy="330" r="90" fill="none" stroke="#ede9fe" stroke-opacity="0.35" stroke-width="1"/>
+                <circle cx="180" cy="330" r="50" fill="#0d0a18"/>
+                <polygon points="380,360 450,180 444,360" fill="#ede9fe" opacity="0.9"/>
+                <polygon points="444,360 450,180 488,360" fill="#a78bfa" opacity="0.85"/>
+              </svg>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__cat">Branding · Identidade Visual</span>
+              <h3 class="work-card__title">Reposicionamento de marca — setor agro</h3>
+              <span class="work-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal="up" data-hover>
+            <div class="work-card__media">
+              <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs><linearGradient id="w2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1430"/><stop offset="1" stop-color="#0d0a18"/></linearGradient></defs>
+                <rect width="600" height="440" fill="url(#w2)"/>
+                <g stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.8">
+                  <path d="M60 360 L160 250 L240 300 L340 160 L430 220 L540 90"/>
+                </g>
+                <circle cx="340" cy="160" r="7" fill="#ede9fe"/>
+                <circle cx="540" cy="90" r="7" fill="#a78bfa"/>
+                <g fill="#c4b5fd" opacity="0.25"><rect x="60" y="380" width="60" height="8" rx="4"/><rect x="140" y="380" width="120" height="8" rx="4"/><rect x="280" y="380" width="80" height="8" rx="4"/></g>
+              </svg>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__cat">Mídia · Tráfego Pago</span>
+              <h3 class="work-card__title">Performance 360º — indústria farmacêutica</h3>
+              <span class="work-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal="up" data-hover>
+            <div class="work-card__media">
+              <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs><linearGradient id="w3" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#241a45"/><stop offset="1" stop-color="#0d0a18"/></linearGradient></defs>
+                <rect width="600" height="440" fill="url(#w3)"/>
+                <g transform="rotate(-12 300 220)">
+                  <rect x="170" y="110" width="180" height="240" rx="14" fill="#13102a" stroke="#8b5cf6" stroke-opacity="0.6"/>
+                  <rect x="250" y="80" width="180" height="240" rx="14" fill="#1c1638" stroke="#c4b5fd" stroke-opacity="0.5"/>
+                  <polygon points="310,260 340,180 338,260" fill="#ede9fe"/>
+                  <polygon points="338,260 340,180 362,260" fill="#8b5cf6"/>
+                </g>
+              </svg>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__cat">Design de Embalagens</span>
+              <h3 class="work-card__title">Linha premium — varejo alimentar</h3>
+              <span class="work-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+
+          <article class="work-card work-card--lg" data-reveal="up" data-hover>
+            <div class="work-card__media">
+              <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs><radialGradient id="w4" cx="0.7" cy="0.2" r="1"><stop offset="0" stop-color="#6d28d9"/><stop offset="0.6" stop-color="#241a45"/><stop offset="1" stop-color="#0d0a18"/></radialGradient></defs>
+                <rect width="600" height="440" fill="url(#w4)"/>
+                <g stroke="#c4b5fd" stroke-opacity="0.3" fill="none">
+                  <path d="M0 320 Q150 260 300 320 T600 320"/>
+                  <path d="M0 350 Q150 290 300 350 T600 350"/>
+                  <path d="M0 380 Q150 320 300 380 T600 380"/>
+                </g>
+                <rect x="90" y="90" width="420" height="170" rx="12" fill="#0f0c1e" stroke="#8b5cf6" stroke-opacity="0.5"/>
+                <rect x="120" y="125" width="200" height="14" rx="7" fill="#ede9fe" opacity="0.85"/>
+                <rect x="120" y="155" width="280" height="10" rx="5" fill="#c4b5fd" opacity="0.4"/>
+                <rect x="120" y="175" width="240" height="10" rx="5" fill="#c4b5fd" opacity="0.25"/>
+                <rect x="120" y="208" width="110" height="26" rx="13" fill="#8b5cf6"/>
+              </svg>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__cat">Web · Criação de Sites</span>
+              <h3 class="work-card__title">Plataforma digital — setor de tecnologia</h3>
+              <span class="work-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal="up" data-hover>
+            <div class="work-card__media">
+              <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs><linearGradient id="w5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#181230"/><stop offset="1" stop-color="#0d0a18"/></linearGradient></defs>
+                <rect width="600" height="440" fill="url(#w5)"/>
+                <circle cx="300" cy="190" r="95" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="4 10" opacity="0.9"/>
+                <circle cx="300" cy="190" r="60" fill="#8b5cf6" opacity="0.18"/>
+                <path d="M270 190 l20 20 l40 -44" stroke="#ede9fe" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <g fill="#c4b5fd" opacity="0.3"><circle cx="120" cy="90" r="4"/><circle cx="500" cy="120" r="5"/><circle cx="460" cy="330" r="4"/><circle cx="140" cy="340" r="5"/></g>
+              </svg>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__cat">Mídias Sociais</span>
+              <h3 class="work-card__title">Presença digital — rede de serviços</h3>
+              <span class="work-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal="up" data-hover>
+            <div class="work-card__media">
+              <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs><radialGradient id="w6" cx="0.5" cy="1" r="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="0.55" stop-color="#2c2058"/><stop offset="1" stop-color="#0d0a18"/></radialGradient></defs>
+                <rect width="600" height="440" fill="url(#w6)"/>
+                <g stroke="#ede9fe" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round">
+                  <path d="M300 340 V120"/><path d="M300 120 l-40 60"/><path d="M300 120 l40 60"/><path d="M300 180 l-60 70"/><path d="M300 180 l60 70"/>
+                </g>
+                <circle cx="300" cy="110" r="8" fill="#ede9fe"/>
+                <circle cx="260" cy="180" r="5" fill="#a78bfa"/><circle cx="340" cy="180" r="5" fill="#a78bfa"/>
+                <circle cx="240" cy="250" r="5" fill="#8b5cf6"/><circle cx="360" cy="250" r="5" fill="#8b5cf6"/>
+              </svg>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__cat">Eventos · Experiências</span>
+              <h3 class="work-card__title">Lançamento nacional — convenção de vendas</h3>
+              <span class="work-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLIENTES ============ -->
+    <section class="clients section" id="clientes">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="section-head__index">04</span>
+          <span class="section-head__label">Clientes</span>
+          <span class="section-head__line"></span>
+        </header>
+
+        <h2 class="section-title section-title--center" data-reveal="words">Empresas que conhecem <em>nosso trabalho</em></h2>
+        <p class="clients__text" data-reveal="up">Nos mais variados ramos de atividade, estas são as empresas que confiam e colhem resultados com a nossa parceria estratégica e criativa.</p>
+      </div>
+
+      <div class="marquee" data-reveal="fade">
+        <div class="marquee__track marquee__track--left">
+          <div class="marquee__group">
+            <span class="marquee__item">VÉRTICE<small>Indústria</small></span><i>✦</i>
+            <span class="marquee__item">AURUM<small>Varejo</small></span><i>✦</i>
+            <span class="marquee__item">TERRA VIVA<small>Agro</small></span><i>✦</i>
+            <span class="marquee__item">NOVAFARMA<small>Farmacêutico</small></span><i>✦</i>
+            <span class="marquee__item">QUANTA<small>Tecnologia</small></span><i>✦</i>
+            <span class="marquee__item">HORIZONTE<small>Serviços</small></span><i>✦</i>
+          </div>
+        </div>
+        <div class="marquee__track marquee__track--right">
+          <div class="marquee__group">
+            <span class="marquee__item">PRISMA<small>Tecnologia</small></span><i>✦</i>
+            <span class="marquee__item">CAMPO REAL<small>Agro</small></span><i>✦</i>
+            <span class="marquee__item">NÚCLEO<small>Indústria</small></span><i>✦</i>
+            <span class="marquee__item">ALVORADA<small>Varejo</small></span><i>✦</i>
+            <span class="marquee__item">VITALIS<small>Farmacêutico</small></span><i>✦</i>
+            <span class="marquee__item">ATLAS<small>Serviços</small></span><i>✦</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta section">
+      <div class="container cta__content">
+        <h2 class="cta__title" data-reveal="words">Pronto para causar <em>impacto com relevância?</em></h2>
+        <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="btn btn--primary btn--lg" data-hover data-magnetic data-reveal="up">
+          <span>Chamar WhatsApp</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="cta__scene" aria-hidden="true">
+        <img src="assets/eclipse.png" alt="" class="eclipse-img eclipse-img--cta">
+        <img src="assets/rhino.svg" alt="" class="cta__rhino-silhouette">
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand" data-reveal="up">
+          <a href="#inicio" class="logo" data-hover aria-label="SAVANA">
+            <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+              <polygon points="8,33 19,5 18,33" fill="#ede9fe"/>
+              <polygon points="18,33 19,5 25,33" fill="#8b5cf6"/>
+              <polygon points="25,33 19,5 32,33" fill="#4c3399"/>
+            </svg>
+            <span class="logo__text">SAVANA</span>
+          </a>
+          <p class="footer__tagline">Estratégia, criatividade e resultados. Atendimento 360º com inteligência de mercado.</p>
+          <div class="footer__socials">
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.2A9.5 9.5 0 1 0 12 2.5z"/><path d="M8.8 8.4c-.3 1.9 1.5 4.6 3.2 5.7 1.3.9 3 1.6 3.9.9.4-.3.5-1 .2-1.4l-1.3-1c-.3-.2-.7-.2-1 0l-.6.5c-1-.5-2.1-1.6-2.5-2.6l.5-.5c.3-.3.3-.7.1-1l-.9-1.4c-.3-.4-1-.4-1.4 0-.1.2-.2.5-.2.8z"/></svg>
+            </a>
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 21v-7h2.5l.5-3H14V9.2c0-.9.3-1.7 1.7-1.7H16.5V4.8S15.4 4.5 14.4 4.5c-2.2 0-3.6 1.3-3.6 3.8V11H8.5v3H10.8v7"/></svg>
+            </a>
+            <a href="https://br.linkedin.com/company/savanapublicidade" target="_blank" rel="noopener" class="social-icon" data-hover aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9.5" width="3.4" height="11"/><circle cx="4.7" cy="5" r="1.8"/><path d="M10 20.5v-11h3.3v1.6c.6-1 1.8-1.8 3.3-1.8 2.6 0 4.4 1.8 4.4 5v6.2h-3.4v-5.7c0-1.6-.7-2.6-2-2.6s-2.2 1-2.2 2.6v5.7z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-card" data-reveal="up">
+          <h3 class="map-card__title">São Paulo</h3>
+          <address class="map-card__address">Rua Américo Brasiliense, 440<br>CEP 13025-230, Cambuí, Campinas/SP</address>
+          <div class="map-card__frame">
+            <iframe src="https://www.google.com/maps?q=Rua%20Am%C3%A9rico%20Brasiliense%2C%20440%2C%20Cambu%C3%AD%2C%20Campinas%20-%20SP%2C%2013025-230&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — unidade São Paulo (Campinas)" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="map-card" data-reveal="up">
+          <h3 class="map-card__title">Distrito Federal</h3>
+          <address class="map-card__address">BL G-SCS Quadra 1, Edifício Baracat, Sala 501<br>CEP 70309-900, Asa Sul, Brasília/DF</address>
+          <div class="map-card__frame">
+            <iframe src="https://www.google.com/maps?q=SCS%20Quadra%201%2C%20Edif%C3%ADcio%20Baracat%2C%20Asa%20Sul%2C%20Bras%C3%ADlia%20-%20DF%2C%2070309-900&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — unidade Distrito Federal (Brasília)" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 - Savana Publicidade - Todos os direitos reservados.</p>
+        <a href="#inicio" class="footer__top-link" data-hover>
+          Voltar ao topo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5519999238795?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20ag%C3%AAncia" target="_blank" rel="noopener" class="whatsapp-float" id="whatsapp-float" data-hover aria-label="Chamar WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.2A9.5 9.5 0 1 0 12 2.5z"/><path d="M8.8 8.4c-.3 1.9 1.5 4.6 3.2 5.7 1.3.9 3 1.6 3.9.9.4-.3.5-1 .2-1.4l-1.3-1c-.3-.2-.7-.2-1 0l-.6.5c-1-.5-2.1-1.6-2.5-2.6l.5-.5c.3-.3.3-.7.1-1l-.9-1.4c-.3-.4-1-.4-1.4 0-.1.2-.2.5-.2.8z"/></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
