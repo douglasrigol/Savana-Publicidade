@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" fill="none" role="img" aria-label="Rinoceronte facetado SAVANA">
+  <defs>
+    <linearGradient id="rhinoBase" x1="400" y1="60" x2="430" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="0.45" stop-color="#8b6cf0"/>
+      <stop offset="1" stop-color="#3e2c8f"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="720" y1="150" x2="760" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d55d0"/>
+      <stop offset="1" stop-color="#34246e"/>
+    </linearGradient>
+    <radialGradient id="humpLight" cx="0.45" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="rhinoClip">
+      <polygon points="70,282 62,240 58,132 120,206 138,168 178,196 230,130 252,84 282,128 392,84 520,116 648,92 722,162 730,258 700,420 712,470 640,470 646,380 600,330 560,340 572,452 516,452 520,336 430,330 372,332 386,446 330,446 332,330 300,326 312,466 252,466 250,330 218,322 170,308 98,292"/>
+    </clipPath>
+  </defs>
+
+  <!-- cauda (atrás do corpo) -->
+  <polygon points="716,150 748,290 760,406 734,400 702,236" fill="url(#tailGrad)"/>
+
+  <!-- silhueta base -->
+  <polygon points="70,282 62,240 58,132 120,206 138,168 178,196 230,130 252,84 282,128 392,84 520,116 648,92 722,162 730,258 700,420 712,470 640,470 646,380 600,330 560,340 572,452 516,452 520,336 430,330 372,332 386,446 330,446 332,330 300,326 312,466 252,466 250,330 218,322 170,308 98,292" fill="url(#rhinoBase)"/>
+
+  <!-- facetas (recortadas pela silhueta) -->
+  <g clip-path="url(#rhinoClip)">
+    <!-- luz geral do dorso -->
+    <rect x="0" y="0" width="820" height="560" fill="url(#humpLight)"/>
+
+    <!-- chifres -->
+    <polygon points="58,132 62,240 98,206" fill="#efe9fe" opacity="0.92"/>
+    <polygon points="58,132 98,206 120,206" fill="#181040" opacity="0.32"/>
+    <polygon points="120,206 138,168 146,206" fill="#e4dafc" opacity="0.9"/>
+    <polygon points="138,168 178,196 146,206" fill="#181040" opacity="0.3"/>
+
+    <!-- topo da cabeça e testa -->
+    <polygon points="98,206 120,206 146,206 170,230" fill="#ffffff" opacity="0.18"/>
+    <polygon points="146,206 178,196 170,230" fill="#ffffff" opacity="0.1"/>
+    <polygon points="178,196 230,130 192,228 170,230" fill="#ffffff" opacity="0.2"/>
+
+    <!-- orelha -->
+    <polygon points="230,130 252,84 258,118" fill="#ffffff" opacity="0.22"/>
+    <polygon points="252,84 282,128 258,118" fill="#181040" opacity="0.38"/>
+
+    <!-- focinho e mandíbula -->
+    <polygon points="62,240 98,206 120,206 124,238" fill="#cabcf9" opacity="0.55"/>
+    <polygon points="62,240 124,238 210,260 170,308 98,292 70,282" fill="#181040" opacity="0.26"/>
+    <polygon points="124,238 170,230 192,228 210,260" fill="#ffffff" opacity="0.08"/>
+
+    <!-- pescoço e sombra do peito -->
+    <polygon points="250,210 300,190 280,280 218,322" fill="#181040" opacity="0.22"/>
+    <polygon points="192,228 250,210 218,322 210,260" fill="#181040" opacity="0.12"/>
+
+    <!-- cupim iluminado -->
+    <polygon points="282,128 392,84 390,160" fill="#ffffff" opacity="0.26"/>
+    <polygon points="282,128 390,160 300,190" fill="#ffffff" opacity="0.12"/>
+
+    <!-- dorso -->
+    <polygon points="392,84 520,116 470,210 390,160" fill="#ffffff" opacity="0.14"/>
+    <polygon points="520,116 648,92 600,200 470,210" fill="#ffffff" opacity="0.19"/>
+    <polygon points="648,92 722,162 660,260 600,200" fill="#181040" opacity="0.14"/>
+
+    <!-- garupa e quadril -->
+    <polygon points="722,162 730,258 660,260" fill="#181040" opacity="0.3"/>
+    <polygon points="600,200 660,260 520,280 470,210" fill="#9d86ef" opacity="0.28"/>
+
+    <!-- barriga -->
+    <polygon points="280,280 430,290 430,330 250,330" fill="#181040" opacity="0.34"/>
+    <polygon points="430,290 520,280 600,330 520,336 430,330" fill="#181040" opacity="0.3"/>
+    <polygon points="300,190 390,160 470,210 330,250 280,280" fill="#8d74e6" opacity="0.18"/>
+
+    <!-- perna traseira próxima -->
+    <polygon points="600,330 730,258 700,420 646,380" fill="#181040" opacity="0.3"/>
+    <polygon points="646,380 700,420 712,470 640,470" fill="#181040" opacity="0.42"/>
+
+    <!-- pernas distantes (mais escuras) -->
+    <polygon points="520,336 516,452 572,452 560,340" fill="#181040" opacity="0.46"/>
+    <polygon points="332,330 330,446 386,446 372,332" fill="#181040" opacity="0.46"/>
+
+    <!-- perna dianteira próxima -->
+    <polygon points="250,330 252,466 312,466 300,326" fill="#181040" opacity="0.16"/>
+    <polygon points="250,330 252,466 272,466 270,332" fill="#ffffff" opacity="0.1"/>
+
+    <!-- malha de facetas -->
+    <g stroke="#ede9fe" stroke-opacity="0.1" stroke-width="1.4">
+      <path d="M58 132 L98 206 L62 240 M98 206 L120 206 M120 206 L146 206 L138 168 M146 206 L170 230 L98 206 M170 230 L178 196 M170 230 L192 228 L230 130 M192 228 L210 260 L124 238 L170 230 M62 240 L124 238 M210 260 L170 308 M210 260 L218 322 M230 130 L258 118 M258 118 L282 128 M192 228 L250 210 L230 130 M250 210 L282 128 M250 210 L300 190 M300 190 L282 128 M300 190 L390 160 L282 128 M390 160 L392 84 M390 160 L470 210 L392 84 M470 210 L520 116 M470 210 L600 200 L520 116 M600 200 L648 92 M600 200 L660 260 L722 162 M660 260 L730 258 M470 210 L330 250 L300 190 M330 250 L280 280 L300 190 M250 210 L280 280 L218 322 M330 250 L430 290 L280 280 M430 290 L470 210 M430 290 L520 280 L470 210 M520 280 L660 260 M520 280 L600 330 M520 280 L520 336 M430 290 L430 330 M280 280 L250 330 M660 260 L600 330 M660 260 L646 380"/>
+    </g>
+
+    <!-- olho -->
+    <polygon points="186,222 198,219 200,229 189,232" fill="#160e35"/>
+    <circle cx="191" cy="223.5" r="1.8" fill="#d8cffb"/>
+
+    <!-- narina -->
+    <polygon points="74,254 84,252 82,262" fill="#181040" opacity="0.5"/>
+  </g>
+
+  <!-- contorno sutil -->
+  <polygon points="70,282 62,240 58,132 120,206 138,168 178,196 230,130 252,84 282,128 392,84 520,116 648,92 722,162 730,258 700,420 712,470 640,470 646,380 600,330 560,340 572,452 516,452 520,336 430,330 372,332 386,446 330,446 332,330 300,326 312,466 252,466 250,330 218,322 170,308 98,292" stroke="#cdc2fa" stroke-opacity="0.18" stroke-width="1.5" fill="none"/>
+</svg>
